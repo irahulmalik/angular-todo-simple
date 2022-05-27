@@ -30,6 +30,8 @@
 .todo-feild {
   height: 1.8rem;
   line-height: 1.8rem;
+  min-width: 320px;
+  margin-left: -39px;
   font: inherit;
   outline: none;
   border: 0.1px solid rgb(253, 187, 187);
@@ -68,6 +70,12 @@
   font-size: 15px;
   font-family: 'Open Sans', Lato;
   font-weight: 100;
+}
+
+.todos:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+  color: #db66aa;
 }
 
 .action-btn {
