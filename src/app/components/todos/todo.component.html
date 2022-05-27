@@ -28,7 +28,7 @@
           class="act"
           role="button"
           [ngStyle]="{ fill: getColor(todo.status) }"
-          (click)="onProgress()"
+          (click)="onProgress(todo)"
         >
           <svg
             class="svgs"
@@ -45,7 +45,7 @@
           class="act"
           role="button"
           [ngStyle]="{ fill: getColor(todo.status) }"
-          (click)="onDone()"
+          (click)="onDone(todo)"
         >
           <svg
             class="svgs"
@@ -60,5 +60,8 @@
         </p>
       </div>
     </div>
+  </div>
+  <div class="snackbar">
+    <div id="snackbar">{{snackbarMsg}}</div>
   </div>
 </div>
